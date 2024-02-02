@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="registration" method="post">
+      <div>
+        <table>
+          <tr>
+            <td>
+              <label for="firstname">First Name: *</label>
+            </td>
+            <td>
+              <input type="text" name="firstname" id="firstname" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lastname">Last Name: *</label></td>
+            <td><input type="text" name="lastname" id="lastname" /></td>
+          </tr>
+          <tr>
+            <td><label for="emailaddress">Email Address: *</label></td>
+            <td>
+              <input type="email" name="emailaddress" id="emailaddress" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password: *</label></td>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="confirm">Confirm Password: *</label></td>
+            <td><input type="password" name="confirm" id="confirm" /></td>
+          </tr>
+          <tr>
+            <td><label for="birthday">Birthday: </label></td>
+            <td><input type="date" name="birthday" id="birthday" /></td>
+          </tr>
+        </table>
+      </div>
+      <!-- <div>
+        <label for="firstname">First Name: *</label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+
+      <div>
+        <label for="lastname">Last Name: *</label>
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+
+      <div>
+        <label for="emailaddress">Email Address: *</label>
+        <input type="email" name="emailaddress" id="emailaddress" />
+      </div>
+
+      <div>
+        <label for="password">Password: *</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <div>
+        <label for="confirm">Confirm Password: *</label>
+        <input type="password" name="confirm" id="confirm" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday: </label>
+        <input type="date" name="birthday" id="birthday" />
+      </div> -->
+
+      <div>
+        <p>Gender Identity:</p>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="non" />
+        <label for="non">Non-binary</label>
+        <input type="radio" name="gender" id="notanswer" />
+        <label for="notanswer">I prefer not to answer</label>
+      </div>
+
+      <div>
+        <p>A short description about myself:</p>
+        <textarea name="comment" cols="20" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="languages">Favorite Language: </label>
+        <select name="languages" id="lang">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+        </select>
+      </div>
+      <div>
+        <input type="checkbox" name="check" id="check" />
+        <label for="check">
+          Yes, I would like to receive periodic email updates
+        </label>
+      </div>
+
+      <div>
+        <input type="submit" name="submit" id="submit" value="Create Account" />
+      </div>
+
+      <p>* Indicates a required</p>
+    </form>
+  </body>
+</html>
